@@ -1,7 +1,7 @@
 from flask import Flask, request, render_template_string
 
 app = Flask(__name__)
-
+#trigger
 HTML_FORM = """
 <h2>Event Registration</h2>
 <form method="POST">
