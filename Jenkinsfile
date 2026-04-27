@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/bhagwatsatyam/webhook_ci.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t flask-event-app .'
